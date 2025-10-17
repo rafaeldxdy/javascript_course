@@ -1,0 +1,91 @@
+<!-- The goal of this project is just explore some basic html tags -->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rafael’s Page</title>
+  <style>
+    #header, footer {
+      background-color: #f8f9fa;
+      padding: 1em;
+      text-align: center;
+    }
+
+    #nav_links > a{
+        text-decoration: none;
+        color: #007bff;
+    }
+
+    #profile-picture {
+      width: 150px;
+      height: 150px;
+      float: left;
+    }
+
+    #introduction{
+        margin-left: 160px;
+    }
+
+    #clear_float{
+        clear: both;
+    }
+
+    .link_style > li > a{
+        text-decoration: none;
+        color: red;
+    }
+
+  </style>
+</head>
+<body>
+  <header id="header">
+    <h1>Welcome to Rafael’s Page</h1>
+    <nav id="nav_links">
+      <a href="#about">About</a> |
+      <a href="#projects">Projects</a> |
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="images/profile_picture.jpg" alt="Your photo" id="profile-picture">
+      <p id="introduction">
+        👋 Hi, I’m @rafaeldxdy <br>
+        👀 I’m interested in Technology and Self-development <br>
+        🌱 I’m currently learning JavaScript and English <br>
+        📫 How to reach me follow @rafaeldxdy on any social media <br>
+      </p>
+      <div id="clear_float"></div>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <ul class="link_style">
+        <li><a href="https://github.com/rafaeldxdy/murachs-sql-server-2016-for-developers">SQL</a></li>
+        <li><a href="https://github.com/rafaeldxdy/javascript_course">JavaScript</a></li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name:</label><br>
+        <input id="name" type="text" placeholder="Your name"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" rows="4"></textarea><br>
+
+        <button type="submit">Send</button><br><br>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Rafael — All rights reserved.</p>
+  </footer>
+</body>
+</html>
