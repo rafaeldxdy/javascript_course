@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing boxes</title>
+    <style>
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+
+        body{
+            background: black;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <h1>Logo</h1>
+        <h2>Login</h2>
+    </header>
+
+    <div style="height: 2000px; background: white;">
+        <p>Scroll down to see the header stay in place.</p>
+
+    </div>
+</body>
+</html>
