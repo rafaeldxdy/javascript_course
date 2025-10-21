@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+
+        * {  /* Aiming to "reset" all preset CSS of any element. */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* border and padding are considered to calculate size of a box */
+        }
+
+        .section-one {
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Altja_j%C3%B5gi_Lahemaal.jpg/330px-Altja_j%C3%B5gi_Lahemaal.jpg);
+            background-size: cover;
+            background-position: center center;
+            height: 200px;
+            width: 200px;
+            border-style: solid;
+            border-width: 10px;
+            border-left-color: blue;
+            border-right-color: red;
+            border-top-color: green;
+            border-bottom-color: yellow;
+            padding: 10px 20px 30px 40px;
+            color: #fff;
+            margin: 20px;
+        }
+
+        .section-two {
+            height: 200px;
+            width: 200px;
+            border: 5px solid black;
+            background: cyan;
+            padding: 15px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section-one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laudantium quidem
+        neque nihil quo accusantium ex magnam doloremque nobis nesciunt, ipsum, necessitatibus, expedita repellendus
+        officiis blanditiis! Ullam iste eveniet quas?</section>
+    <section class="section-two">2</section>
+
+</body>
+
+</html>
