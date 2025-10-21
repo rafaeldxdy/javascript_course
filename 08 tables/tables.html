@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            text-align: left;
+            width: 800%;
+        }
+
+        table td, table th{
+            border: 1px solid #CCC;
+            padding: 5px;
+        }
+
+        table caption{
+            font-weight: bold;
+            margin-top: 10px;
+            caption-side: bottom;
+            text-align: center;
+        }
+
+        tfoot td, thead th{
+            font-weight: bold;
+            background-color: lightgrey;
+        }
+
+        tfoot td{
+            font-style: italic;
+        }
+
+        #responsive-table{
+            max-width: 100%;
+            overflow-x: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="responsive-table">
+        <table>
+            <caption>My First Table</caption>
+
+            <thead>
+                <tr>
+                    <th>Title 1</th>
+                    <th>Title 2</th>
+                    <th>Title 3</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Data 1</td>
+                    <td>Data 2</td>
+                    <td rowspan="2">Data 5</td>
+                </tr>
+                <tr>
+                    <td>Data 1</td>
+                    <td>Data 2</td>
+                </tr> 
+                <tr>
+                    <td colspan="2">Data 1</td>
+                    <td>Data 2</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>Total 01</td>
+                    <td>Total 02</td>
+                    <td>Total 03</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
