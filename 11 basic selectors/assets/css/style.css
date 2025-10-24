@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: blue;
+}
+
+body div section p,
+body div section h1 {
+    color: red;
+}
+
+.color-gold {
+    color: gold;
+}
+
+.main-content h3.sub-content {
+    color: green;
+}
