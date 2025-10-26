@@ -1,0 +1,45 @@
+.pseudoclass {
+    transition: all 1s ease-in-out;
+}
+
+.pseudoclass:hover  {
+    background-color: red;
+}
+
+a {
+    background-color: blue;
+    
+}
+
+a:link{
+    color: deeppink;
+}
+
+a:visited{
+    color: yellow;
+}
+
+a:active{
+    color: brown;
+    background-color: cadetblue;
+}
+
+input:focus{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: lightgray;
+}
+
+input:disabled{
+    background-color: lightcoral;
+    cursor: not-allowed;
+}
+
+input:checked + p{
+    background: green;
+    color: white;
+}
+
+input:not(:checked) + p{
+    background: black;
+    color: white;
+}
