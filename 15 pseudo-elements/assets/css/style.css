@@ -1,0 +1,11 @@
+ul li::after{
+    content: ",";
+    color: red;
+    background: lightblue;
+}
+
+p::first-letter{
+    font-size: 200%;
+    color: green;
+    font-weight: bold;
+}
