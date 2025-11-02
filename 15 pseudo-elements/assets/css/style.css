@@ -9,3 +9,8 @@ p::first-letter{
     color: green;
     font-weight: bold;
 }
+
+.form-field::placeholder{
+    color: orange;
+    font-style: italic;
+}

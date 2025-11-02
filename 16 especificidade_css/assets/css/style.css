@@ -1,0 +1,15 @@
+#p {
+    background: red;
+}
+
+.p {
+    background: blue;
+}
+
+#p.p {
+    background: green !important;
+}
+
+#b p#p.p {
+    background: yellow;
+}
